@@ -1,0 +1,11 @@
+<ul class="list-unstyled">
+  <li 
+    *ngFor="let user of users"
+    class="media">
+    <img class="d-flex mr-3" [src]="follower.avatar_url">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">{{user.login}}</h5>
+      <a href="#">{{user.html_url}}</a>
+    </div>
+  </li>
+</ul>
