@@ -6,17 +6,19 @@ import { followerService } from '../services/follower.service';
   templateUrl: './followers.component.html',
   styleUrls: ['./followers.component.css']
 })
-export class FollowersComponent implements OnInit {
+export class FollowersComponent {
 
-  users: any [];
+  // users: any [];
 
   constructor(private service: followerService) { }
 
 
-  ngOnInit() {
-    this.service.getAll()
-      .subscribe(users => this.users);
-      // console.log(this.users);
-  }
+  // ngOnInit() {
+  //   this.service.getAll()
+  //     .subscribe(users => this.users);
+  //     // console.log(this.users);
+  // }
+
+  
 
 }
